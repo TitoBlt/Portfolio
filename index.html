@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tito Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Tito | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <!-- NAVIGATION LINKS SCROLL TO SECTIONS ON THE SAME PAGE -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HOME / HERO SECTION -->
+  <header id="home">
+    <h1>Hello, I’m Tito</h1>
+    <p>Aspiring Bitcoin & Data Developer</p>
+    <button onclick="window.location='#projects'">View my projects</button>
   </header>
 
   <main>
-    <h1>Hello, I'm Tito</h1>
-    <p>Aspiring Data & Bitcoin Developer</p>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Bitcoin Last Block Analyzer</h3>
+        <p>A Python tool to fetch and analyze the latest Bitcoin block using the mempool.space API.</p>
+
+        <a class="btn" href="bitcoin-last-block-analyzer.html">View Details</a>
+      </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Tito, learning Python, Bitcoin development, data analysis, and building projects to enter the crypto tech world.</p>
+      <p>I focus on clean code, real-world projects, and continuous self-improvement.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your-email-here</p>
+      <p>GitHub: <a href="https://github.com/Wacko7" target="_blank">github.com/Wacko7</a></p>
+      <p>LinkedIn: add later</p>
+    </section>
+
   </main>
+
+  <footer>
+    <p>© 2025 Tito</p>
+  </footer>
 
 </body>
 </html>
